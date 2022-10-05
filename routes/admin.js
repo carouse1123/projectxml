@@ -8,11 +8,6 @@ let db = monk(url);
 let showdata =db.get('users');
 
 /* GET home page. */
-router.post('/', function(req, res, next) {
-  let showdata = db.get('users');
-  showdata.find({},function (err, docs){
-        res.render('admin',{calldata:docs})
-  })
-});
+
 
 module.exports = router;
