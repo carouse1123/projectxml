@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check IT Login</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+        * {
+            font-family: 'Kanit', sans-serif;
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            text-transform: uppercase;
+            margin-left: 20px;
+            font-weight: bold;
+        }
+
+        a {
+            text-decoration: none;
+            color: #000;
+        }
+
+        h2 {
+            color: #FA2A55;
+            margin-left: 13%;
+            margin-top: 4%;
+            font-size: 60px;
+            font-weight: bold;
+        }
+
+        #login-picture {
+            float: right;
+            clear: left;
+            top: 140px;
+            margin-left: 38%;
+            position: fixed;
+        }
+
+        .std-pic {
+            width: 620px;
+            height: 380px;
+            margin-left: 150px;
+            margin-top: 10%
+        }
+
+        #username,
+        #password {
+            margin-left: 13%;
+            margin-top: 1%;
+            height: 60px;
+            width: 400px;
+            border-radius: 18px;
+            border: 1px solid rgb(170, 170, 170);
+            padding: 1% 2% 1% 2%;
+            font-size: larger;
+        }
+
+        #login {
+            margin-left: 13%;
+            margin-top: 1%;
+            height: 60px;
+            width: 400px;
+            border-radius: 18px;
+            background-color: #FA2A55;
+            color: white;
+            font-weight: bold;
+            border: none;
+            font-size: 1.4rem;
+        }
+
+        #login:hover {
+            pointer-events: auto;
+            background-color: #cf2245;
+        }
+
+        #dont {
+            margin-left: 17.5%;
+            margin-top: 2%;
+            font-size: 1.1rem;
+            color: gray;
+        }
+
+        #login-box {
+            margin-top: 8%;
+        }
+
+        @media screen and (min-width:1080px) {
+            .std-pic {
+                width: 620px;
+                height: 380px;
+                margin-left: 282px;
+                margin-top: 21%;
+            }
+
+            #login-box {
+                margin-top: 12%;
+                margin-left: 5%;
+            }
+
+            .content1 {
+                margin-top: -25px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <p style="font-size: 30px; float: right; margin-right: 18%; text-align: center;">เตรียมสอบเข้า
+        วิทยาลัยการคอมพิวเตอร์ <br>
+        มหาวิทยาลัยขอนแก่น</p>
+
+    <div id="login-box">
+        <h2>เข้าสู่ระบบ</h2>
+        <form action="/auth/adminlogin" method="post">
+            <input id="username" type="text" class="form-control" name="email" aria-describedby="username"
+                placeholder="อีเมล" required> <br>
+            <input id="password" type="password" class="form-control" name="password" placeholder="รหัสผ่าน" required>
+            <br>
+
+            <button type="submit" name="login" id="login">เข้าสู่ระบบ</button>
+
+        </form>
+
+    </div>
+    <div>
+        <div id="login-picture">
+            <img src="/images/4008750.jpg" alt="รูปนักเรียน" class="std-pic">
+        </div>
+    </div>
+
+</body>
+
+</html>

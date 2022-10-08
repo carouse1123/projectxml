@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+body {
+  font-family: 'Kanit', sans-serif;
+
+}
+
+.logo {
+  margin-top: 40px;
+  margin-left: 20px;
+  padding: 10px;
+}
+
+/* ======================= sidenav ====================== */
+.sidenav {
+  float: left;
+  background-color: #FEA3AA;
+  height: 47rem;
+  width: 15%;
+  /* position: fixed; */
+  z-index: 1;
+  overflow-x: hidden;
+
+}
+
+.sidenav a,
+.dropdown-btn {
+  padding: 8px 8px 8px 50px;
+  text-decoration: none;
+  font-size: 16px;
+  color: black;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+#nav {
+  position: relative;
+  top: 10px;
+  vertical-align: auto;
+}
+
+.dropdown-btn {
+  color: black;
+
+}
+
+.sidenav a:hover,
+.dropdown-btn:hover {
+  color: white;
+  background-color: #FA2A55;
+}
+
+.dropdown-container a:hover {
+  background-color: #f0617e;
+
+}
+
+i:hover {
+  color: white;
+}
+
+.active {
+  background-color: #FA2A55;
+  color: white;
+}
+
+.sidenav a:focus,
+.dropdown-btn:focus {
+  color: white;
+  background-color: #f0617e;
+}
+
+.fa {
+  color: black;
+
+}
+
+/* Dropdown add a lighter background color */
+.dropdown-container {
+  display: none;
+  background-color: #FA2A55;
+}
+
+.login_btn {
+  position: relative;
+  bottom: -40rem;
+  right: 11rem;
+  color: #FA2A55;
+  border: 1px solid white;
+  padding: 5px 10px;
+  border-radius: 10px;
+  background-color: white;
+
+
+}
+
+.login_btn:hover {
+  text-decoration: none;
+  color: white;
+  background-color: #FA2A55;
+  border: #FA2A55;
+}
+
+.admin_name {
+  position: relative;
+  bottom: -40rem;
+  right: 11.5rem;
+  color: #FA2A55;
+
+  padding: 5px 10px;
+  border-radius: 10px;
+
+}
+
+.admin_pic {
+  position: relative;
+  bottom: -36.5rem;
+  right: 6.5rem;
+}
+
+.admin_name:hover {
+  text-decoration: none;
+  color: white;
+
+}
+
+.breadcrumb {
+  position: relative;
+  left: 1%;
+  top: 25px;
+  width: 500px;
+  font-size: 18px;
+  color: #FA2A55;
+  background-color: transparent;
+
+}
+
+/* Style the list */
+ul.breadcrumb {
+  padding: 10px;
+  list-style: none;
+
+}
+
+/* Display list items side by side */
+ul.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: ">\00a0";
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+  color: #0275d8;
+  text-decoration: none;
+}
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+  color: #01447e;
+  text-decoration: underline;
+}
+
+@media screen and (min-width:1080px) {
+  .login_btn {
+    position: relative;
+    bottom: -53rem;
+    right: 12rem;
+    color: #FA2A55;
+    border: 1px solid white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: white;
+}
+  .sidenav {
+    float: left;
+    background-color: #FEA3AA;
+    height: 60rem;
+    width: 15%;
+    /* position: fixed; */
+    z-index: 1;
+    overflow-x: hidden;
+}
+}

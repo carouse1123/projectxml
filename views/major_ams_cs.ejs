@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>สาขาวิทยาการคอมพิวเตอร์</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/0fb7422e9d.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="/stylesheets/nav.css">
+    <link rel="stylesheet" href="/stylesheets/index.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: kanit;
+
+
+        }
+
+        body {
+            background-color: #E5E5E5;
+        }
+
+
+
+        ul {
+            list-style-type: none;
+        }
+
+        h4 {
+            position: absolute;
+            left: 16rem;
+            top: 8rem;
+        }
+
+        .table1 {
+            width: 67%;
+            color: #292125;
+            position: absolute;
+            top: 180px;
+            left: 312px;
+        }
+
+        .table2 {
+            width: 67%;
+            color: #292125;
+            position: absolute;
+            top: 800px;
+            left: 312px;
+        }
+
+        .table3 {
+            width: 67%;
+            color: #292125;
+            position: absolute;
+            top: 1590px;
+            left: 312px;
+        }
+
+
+
+        table {
+            background-color: white;
+        }
+
+        @media screen and (min-width:1080px) {
+
+
+            .content1 {
+                margin-top: -25px;
+            }
+
+            h4 {
+                position: absolute;
+                left: 20rem;
+                top: 8rem;
+            }
+
+            .table {
+                width: 67%;
+                color: #292125;
+                position: absolute;
+                top: 180px;
+                left: 401px;
+            }
+
+            .add {
+                border: #FA2A55;
+                background-color: #FA2A55;
+                padding: 5px 20px;
+                position: absolute;
+                left: 1564px;
+                top: 122px;
+                color: white;
+                border-radius: 12px;
+            }
+
+            .table1 {
+                width: 67%;
+                color: #292125;
+                position: absolute;
+                top: 27px;
+                left: 17px;
+            }
+
+            .table2 {
+                width: 67%;
+                color: #292125;
+                position: absolute;
+                top: 800px;
+                left: 18px;
+            }
+
+            .table3 {
+                width: 67%;
+                color: #292125;
+                position: absolute;
+                top: 1719px;
+                left: 16px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <%- include navindex.ejs %>
+
+
+        <div class="content">
+            <div class="content1">
+                <ul class="breadcrumb">
+                    <li><a href="/">หน้าแรก</a></li>
+                    <li><a href="/major">เลือกสาขา</a></li>
+                    <li>สาขาวิทยาการคอมพิวเตอร์</li>
+                </ul>
+
+
+                <!-- Start Search box -->
+                <div class="search-text">
+                    <div class="container">
+                        <div class="row text-center">
+
+                            <div class="form">
+
+                                <form id="search-form" class="form-search form-horizontal">
+                                    <input type="text" class="input-search" placeholder="ค้นหาข้อสอบ">
+                                    <button type="submit" class="btn-search">ค้นหา</button>
+                                </form>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- End Search Box  -->
+
+                <!-- สาขา  -->
+                <h4>สาขาวิทยาการคอมพิวเตอร์</h4>
+
+                <div class="table1">
+                    <table class="table table-hover ">
+                        <thead>
+                            <tr>
+                                <th class="ams1">รอบที่ 1 แฟ้มสะสมผลงาน (Portfolio) <br>
+                                    <p class="ams_detail" style="font-weight:normal;">คุณสมบัติเฉพาะ <br>
+
+                                        1) เป็นผู้ที่มีผลการเรียนดี <br>
+
+                                        2) มีผลการเรียนเฉลี่ยสะสม (GPAX) จากผลการเรียนชั้นมัธยมศึกษาปีที่ 4-5 รวม 4 ภาค
+                                        ไม่ต่ำกว่า 2.75 <br>
+
+                                        3) มีผลการเรียนเฉลี่ยวิชาคณิตศาสตร์ในชั้นมัธยมศึกษา ปีที่ 4-5 รวม 4
+                                        ภาคการศึกษาไม่ต่ำกว่า 2.75 <br>
+
+                                        4)
+                                        เป็นผู้ได้รับรางวัลการแข่งขันในโครงการดังต่อไปนี้และรางวัลที่ได้รับจะต้องไม่เกิน
+                                        6 ปี</p>
+                                </th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>4 - 14 พฤศจิกายน 2565</td>
+                                <td> รับสมัคร</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>21 ธันวาคม 2565</td>
+                                <td> ประกาศรายชื่อผู้มีสิทธิ์สอบสัมภาษณ์</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>27 ธันวาคม 2565</td>
+                                <td>สอบสัมภาษณ์</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>11 มกราคม 2566</td>
+                                <td>ประกาศรายชื่อผู้ผ่านการสอบสัมภาษณ์</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>7 กุมภาพันธ์ 2566</td>
+                                <td>ประกาศรายชื่อผู้ผ่านการคัดเลือก</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>7 – 8 กุมภาพันธ์ 2566</td>
+                                <td>ยืนยันสิทธิ์บนระบบ myTCAS</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>9 กุมภาพันธ์ 2566</td>
+                                <td>สละสิทธิ์บนระบบ myTCAS</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>11 กุมภาพันธ์ 2566</td>
+                                <td>ประกาศรายชื่อผู้ยืนยันสิทธิ์เข้าศึกษา</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+                </div>
+
+
+                <!-- รอบ2-->
+                <div class="table2">
+                    <table class="table table-hover ">
+                        <thead>
+                            <tr>
+                                <th>รอบที่ 2 โควตา (Quota)
+                                    <p class="ams_detail" style="font-weight:normal;">
+                                        คุณสมบัติ
+                                    <p class="Course_Ams_Number" style="font-weight:normal;">จำนวนรับ: ปกติ 30
+                                        โครงการพิเศษ
+                                        20</p>
+                                    <p class="Course_Ams_Detail" style="font-weight:normal;">เงื่อนไข:
+                                        ผู้สมัครต้องมีคะแนนเฉลี่ยสะสม GPAX 5 เทอม ไม่น้อยกว่า 3.00
+                                        และมีผลคะแนนกลุ่มสาระการเรียนรู้ใน กลุ่มคณิตศาสตร์ และ
+                                        กลุ่มวิทยาศาสตร์และเทคโนโลยี
+                                        แต่ละกลุ่ม เฉลี่ยไม่น้อยกว่า 3.00</p>
+                                    <p class="Course_Ams_Score" style="font-weight:normal;">คะแนนที่ใช้:
+                                        ความฉลาดรู้ทั่วไป
+                                        ด้านภาษาไทย 10 ด้านภาษาอังกฤษ 10 ด้านภาษาคณิตศาสตร์ 20
+                                        ความฉลาดรู้เฉพาะด้านวิทยาศาสตร์และเทคโนโลยี 40 ความฉลาดรู้เฉพาะด้านฟิสิกส์ 20
+                                        ค่าน้ำหนักรวม 100</p>
+                                    </p>
+                                </th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>14 – 23 กุมภาพันธ์ 2566</td>
+                                <td> รับสมัคร</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>20 มีนาคม 2566</td>
+                                <td>ประกาศรายชื่อผู้มีสิทธิ์เข้ารับการคัดเลือก</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>26 – 27 มีนาคม 2566</td>
+                                <td>ทดสอบวิชาเฉพาะ</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>26 เมษายน 2566</td>
+                                <td>ประกาศรายชื่อผู้มีสิทธิ์สอบสัมภาษณ์ และผู้ผ่านเกณฑ์ทางวิชาการ</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>28 เมษายน 2566</td>
+                                <td>สอบสัมภาษณ์</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>4 พฤษภาคม 2566</td>
+                                <td>ประกาศรายชื่อผู้ผ่านการคัดเลือก</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>4 – 5 พฤษภาคม 2566</td>
+                                <td>ยืนยันสิทธิ์บนระบบ myTCAS</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>6 พฤษภาคม 2566</td>
+                                <td>สละสิทธิ์บนระบบ myTCAS</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>9 พฤษภาคม 2566</td>
+                                <td>ประกาศรายชื่อผู้ยืนยันสิทธิ์เข้าศึกษา</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+                </div>
+
+                <!-- รอบ3-->
+                <div class="table3">
+                    <table class="table table-hover ">
+                        <thead>
+                            <tr>
+                                <th>รอบที่ 3 Admission
+                                    <p class="ams_detail" style="font-weight:normal;">
+                                        คุณสมบัติ
+                                    <p class="Course_Ams_Number" style="font-weight:normal;">จำนวนรับ: ปกติ 35
+                                        โครงการพิเศษ
+                                        10</p>
+                                    <p class="Course_Ams_Detail" style="font-weight:normal;">เงื่อนไข:
+                                        ผู้สมัครต้องมีคะแนนเฉลี่ยสะสม GPAX 5 เทอม ไม่น้อยกว่า 3.00
+                                        และมีผลคะแนนกลุ่มสาระการเรียนรู้ใน กลุ่มคณิตศาสตร์ และ
+                                        กลุ่มวิทยาศาสตร์และเทคโนโลยี
+                                        แต่ละกลุ่ม เฉลี่ยไม่น้อยกว่า 3.00</p>
+                                    <p class="Course_Ams_Score" style="font-weight:normal;">คะแนนที่ใช้:
+                                        ความฉลาดรู้ทั่วไป
+                                        ด้านภาษาไทย 10 ด้านภาษาอังกฤษ 10 ด้านภาษาคณิตศาสตร์ 20
+                                        ความฉลาดรู้เฉพาะด้านวิทยาศาสตร์และเทคโนโลยี 40 ความฉลาดรู้เฉพาะด้านฟิสิกส์ 20
+                                        ค่าน้ำหนักรวม 100</p>
+                                    </p>
+                                </th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>7 – 13 พฤษภาคม 2566</td>
+                                <td>รับสมัครบนระบบ myTCAS</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>20 พฤษภาคม 2566</td>
+                                <td>ประกาศรายชื่อผู้ผ่านการคัดเลือก #1 บนระบบ myTCAS</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>20 – 21 พฤษภาคม 2566</td>
+                                <td>ยืนยันสิทธิ์บนระบบ myTCAS #1</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>26 พฤษภาคม 2566</td>
+                                <td>ประกาศรายชื่อผู้ผ่านการคัดเลือก #2 บนระบบ myTCAS</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>27 พฤษภาคม 2566</td>
+                                <td>สละสิทธิ์บนระบบ myTCAS</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>6 มิถุนายน 2566</td>
+                                <td>ประกาศรายชื่อผู้ยืนยันสิทธิ์เข้าศึกษา</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+                </div>
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+                integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+                crossorigin="anonymous">
+                </script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+                crossorigin="anonymous">
+                </script>
+
+            <!-- Part Java Script -->
+            <script>
+
+
+
+
+                /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+                var dropdown = document.getElementsByClassName("dropdown-btn");
+                var i;
+
+                for (i = 0; i < dropdown.length; i++) {
+                    dropdown[i].addEventListener("click", function () {
+                        this.classList.toggle("active");
+                        var dropdownContent = this.nextElementSibling;
+                        if (dropdownContent.style.display === "block") {
+                            dropdownContent.style.display = "none";
+                        } else {
+                            dropdownContent.style.display = "block";
+                        }
+                    });
+                }
+
+                // Add active class to the current button (highlight it)
+                var header = document.getElementById("nav");
+                var btns = header.getElementsByClassName("btn");
+                for (var i = 0; i < btns.length; i++) {
+                    btns[i].addEventListener("click", function () {
+                        var current = document.getElementsByClassName("active");
+                        current[0].className = current[0].className.replace(" active", "");
+                        this.className += " active";
+                    });
+                }
+            </script>
+</body>
+
+</html>

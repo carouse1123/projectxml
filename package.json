@@ -5,13 +5,28 @@
   "scripts": {
     "start": "node ./bin/www"
   },
+  "keywords": [
+    "node",
+    "upload",
+    "multiple",
+    "files",
+    "images",
+    "mongodb"
+  ],
+  
   "dependencies": {
     "cookie-parser": "~1.4.4",
+    "cors": "^2.8.5",
     "debug": "~2.6.9",
     "ejs": "~2.6.1",
     "express": "~4.16.1",
+    "express-session": "^1.17.3",
     "http-errors": "~1.6.3",
+    "mongodb": "^4.10.0",
     "monk": "^7.3.4",
-    "morgan": "~1.9.1"
+    "morgan": "~1.9.1",
+    "multer": "^1.4.4",
+    "multer-gridfs-storage": "^5.0.2",
+    "session": "^0.1.0"
   }
 }

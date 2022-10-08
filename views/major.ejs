@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เลือกสาขา</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/0fb7422e9d.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="/stylesheets/nav.css">
+    <link rel="stylesheet" href="/stylesheets/index.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: kanit;
+
+
+        }
+
+        body {
+            background-color: #E5E5E5;
+        }
+
+
+
+        ul {
+            list-style-type: none;
+        }
+
+        h4 {
+            position: absolute;
+            left: 16rem;
+            top: 8rem;
+        }
+
+        .wicha {
+            position: absolute;
+            top: 150px;
+            left: 100px;
+            color: #7F7CFF;
+
+        }
+
+        @media screen and (min-width:1080px) {
+
+
+            .content1 {
+                margin-top: -25px;
+            }
+
+            h4 {
+                position: absolute;
+                left: 20rem;
+                top: 8rem;
+            }
+
+            .table {
+                width: 67%;
+                color: #292125;
+                position: absolute;
+                top: 180px;
+                left: 401px;
+            }
+
+            .add {
+                border: #FA2A55;
+                background-color: #FA2A55;
+                padding: 5px 20px;
+                position: absolute;
+                left: 1564px;
+                top: 122px;
+                color: white;
+                border-radius: 12px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <%- include navindex.ejs %>
+
+
+
+        <div class="content">
+            <div class="content1">
+                <ul class="breadcrumb">
+                    <li><a href="/">หน้าแรก</a></li>
+                    <li>เลือกสาขา</li>
+
+                </ul>
+
+
+                <!-- Start Search box -->
+                <div class="search-text">
+                    <div class="container">
+                        <div class="row text-center">
+
+                            <div class="form">
+
+                                <form id="search-form" class="form-search form-horizontal">
+                                    <input type="text" class="input-search" placeholder="ค้นหาข้อสอบ">
+                                    <button type="submit" class="btn-search">ค้นหา</button>
+                                </form>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- End Search Box  -->
+
+                <!-- ข้อสอบ  -->
+                <h4>เลือกสาขา</h4>
+                <div class="exam">
+                    <div class="card-deck">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title" style="font-size: 0.8rem;">
+                                    <p><i class="fa fa-file" aria-hidden="true"></i> สาขาเทคโนโลยีสารสนเทศ </p>
+                                </h5>
+                                <p class="card-text">วิทยาศาสตรบัณฑิต สาขาวิชาเทคโนโลยีสารสนเทศ
+                                    Bachelor of Science Program in Information Technology </p>
+
+                            </div>
+                            <a class="wicha" href="/major/major_ams_it" style=" text-decoration:none"> เลือก</a>
+
+                        </div>
+                        <div class="card">
+
+                            <div class="card-body">
+                                <h5 class="card-title" style="font-size: 0.8rem;">
+                                    <p><i class="fa fa-file" aria-hidden="true"></i>สาขาวิชาวิทยาการคอมพิวเตอร์</p>
+                                </h5>
+                                <p class="card-text">วิทยาศาสตรบัณฑิต สาขาวิชาวิทยาการคอมพิวเตอร์
+                                    Bachelor of Science Program in Computer Science</p>
+                            </div>
+                            <a class="wicha" href="/major/major_ams_cs" style=" text-decoration:none"> เลือก</a>
+
+                        </div>
+                        <div class="card">
+
+                            <div class="card-body">
+                                <h5 class="card-title" style="font-size: 0.8rem;">
+                                    <p><i class="fa fa-file" aria-hidden="true"></i>สาขาวิชาภูมิสารสนเทศศาสตร์</p>
+                                </h5>
+                                <p class="card-text">วิทยาศาสตรบัณฑิต สาขาวิชาภูมิสารสนเทศศาสตร์
+                                    Bachelor of Science Program in Geo-informatics</p>
+                            </div>
+                            <a class="wicha" href="/major/major_ams_gis" style=" text-decoration:none"> เลือก</a>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+                integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+                crossorigin="anonymous">
+                </script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+                crossorigin="anonymous">
+                </script>
+
+            <!-- Part Java Script -->
+            <script>
+
+
+
+
+                /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+                var dropdown = document.getElementsByClassName("dropdown-btn");
+                var i;
+
+                for (i = 0; i < dropdown.length; i++) {
+                    dropdown[i].addEventListener("click", function () {
+                        this.classList.toggle("active");
+                        var dropdownContent = this.nextElementSibling;
+                        if (dropdownContent.style.display === "block") {
+                            dropdownContent.style.display = "none";
+                        } else {
+                            dropdownContent.style.display = "block";
+                        }
+                    });
+                }
+
+                // Add active class to the current button (highlight it)
+                var header = document.getElementById("nav");
+                var btns = header.getElementsByClassName("btn");
+                for (var i = 0; i < btns.length; i++) {
+                    btns[i].addEventListener("click", function () {
+                        var current = document.getElementsByClassName("active");
+                        current[0].className = current[0].className.replace(" active", "");
+                        this.className += " active";
+                    });
+                }
+            </script>
+</body>
+
+</html>

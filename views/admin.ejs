@@ -1,18 +1,286 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>admin</title>
+    <title>หน้าแรก</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/0fb7422e9d.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="/stylesheets/nav.css">
+    <link rel="stylesheet" href="/stylesheets/index.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: kanit;
+
+
+        }
+
+        body {
+            background-color: #E5E5E5;
+        }
+
+
+
+        ul {
+            list-style-type: none;
+        }
+        .content1 {
+            margin-top: -94px;
+        }
+        @media screen and (min-width:1080px) {
+            
+
+            .content1 {
+                margin-top: -25px;
+            }
+        }
+    </style>
+
 </head>
+
 <body>
-    <form action="/admin" method="post">
-        <label name = "email"></label>
-        <input type="text" name="email">
-        <label name = "password"></label>
-        <input type="text" name="password">
-        <button type="submit" value="Login">
-    </form>
+
+    <%- include nav.ejs %>
+
+
+
+    <div class="content">
+        <div class="content1">
+            <ul class="breadcrumb">
+                <li>หน้าแรก</li>
+                
+                
+            </ul>
+            <!-- Start Search box -->
+            <div class="search-text">
+                <div class="container">
+                    <div class="row text-center">
+
+                        <div class="form">
+
+                            <form id="search-form" class="form-search form-horizontal">
+                                <input type="text" class="input-search" placeholder="ค้นหาข้อสอบ">
+                                <button type="submit" class="btn-search">ค้นหา</button>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- End Search Box  -->
+
+        </div>
+        <div class="coc">
+            <div class="coc1">
+                <h5>วิทยาลัยการคอมพิวเตอร์ (College of Computing)</h5>
+                <p>เป็นส่วนงานเทียบเท่าคณะวิชาโดยยกฐานะจากสาขาวิชาวิทยาการคอมพิวเตอร์คณะวิทยาศาสตร์ไปสู่การบริหารจัดการตามพันธกิจอย่างมีประสิทธิภาพโดยจะเป็นองค์กรที่สามารถผลิตผลงานวิจัยผลิตนักศึกษาพัฒนาทรัพยากรมนุษย์ด้านเทคโนโลยีดิจิทัลที่สอดคล้องกับ
+                    นโยบายทั้งในระดับมหาวิทยาลัยและทิศทางการพัฒนาของประเทศนอกจากนั้นยังมีความคาดหวังให้หน่วยงานใหม่นี้เป็นองค์กรที่มี
+                    อัตลักษณ์ด้านเทคโนโลยีดิจิทัลของมหาวิทยาลัยอีกด้วย</p>
+            </div>
+            <img class="imgcoc" src="/images/5836.jpg" alt="coc">
+
+            <a class="majorchoose" href="/auth/addmin_major" style=" text-decoration:none"> เลือกสาขา</a>
+        </div>
+
+
+        <!-- ปฏิทินด้านข้าง  -->
+
+        <div class="event">
+            <div class="eventtime">
+                <h5>Event</h5>
+
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="portfolio-tab" data-toggle="tab" href="#portfolio" role="tab"
+                            aria-controls="portfolio" aria-selected="true">รอบที่1 Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="Quota-tab" data-toggle="tab" href="#Quota" role="tab"
+                            aria-controls="Quota" aria-selected="false">รอบที่2 Quota</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="Admission-tab" data-toggle="tab" href="#Admission" role="tab"
+                            aria-controls="Admission" aria-selected="false">รอบที่3 Admission</a>
+                    </li>
+                </ul>
+
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="portfolio" role="tabpanel"
+                        aria-labelledby="portfolio-tab">
+                        <p><span>22 พ.ย. - 6 ธ.ค. 65</span> &nbsp; &nbsp; สมัคร เลือกคณะ/สาขา</p>
+                        <p><span>8 ธ.ค. - 9 ธ.ค. 65</span> &nbsp; &nbsp; ประกาศรายชื่อ ผู้ผ่านการคัดเลือก</p>
+                        <p><span>12 ม.ค. - 15 ม.ค. 66</span> &nbsp; &nbsp; สอบสัมภาษณ์</p>
+                        <p><span>17 ม.ค. 66
+                            - 24 ม.ค. 66</span> &nbsp; &nbsp; ประกาศรายชื่อ </p>
+                        <p><span>18 ม.ค. 66
+                            - 20 ม.ค. 66</span> &nbsp; &nbsp; ยืนยันสิทธิ์คัดกรองใน มข</p>
+                        <p><span>7 ก.พ. - 8 ก.พ. 66</span> &nbsp; &nbsp; ประกาศรายชื่อ</p>
+                        <p><span>8 ก.พ. - 9 ก.พ. 66</span> &nbsp; &nbsp; ยืนยันสิทธิ์ Clearing House</p>
+                        <p><span>9 ก.พ. - 10 ก.พ. 66</span> &nbsp; &nbsp; สละสิทธิ์ในระบบ ทปอ.</p>
+                        <p><span>11 ก.พ. - 12 ก.พ. 66</span> &nbsp; &nbsp; ประกาศรายชื่อ ผู้มีสิทธิ์เข้าศึกษา</p>
+                        <p><span>16 ก.พ - 20 ก.พ. 66</span> &nbsp; &nbsp; รายงานตัวเข้าศึกษา</p>
+                    </div>
+
+
+
+                    <div class="tab-pane fade" id="Quota" role="tabpanel" aria-labelledby="Quota-tab">
+                        <p><span>22 พ.ย. - 6 ธ.ค. 65</span> &nbsp; &nbsp; สมัคร เลือกคณะ/สาขา</p>
+                        <p><span>8 ธ.ค. - 9 ธ.ค. 65</span> &nbsp; &nbsp; ประกาศรายชื่อ ผู้ผ่านการคัดเลือก</p>
+                        <p><span>12 ม.ค. - 15 ม.ค. 66</span> &nbsp; &nbsp; สอบสัมภาษณ์</p>
+                        <p><span>17 ม.ค. 66
+                            - 24 ม.ค. 66</span> &nbsp; &nbsp; ประกาศรายชื่อ </p>
+                        <p><span>18 ม.ค. 66
+                            - 20 ม.ค. 66</span> &nbsp; &nbsp; ยืนยันสิทธิ์คัดกรองใน มข</p>
+                        <p><span>7 ก.พ. - 8 ก.พ. 66</span> &nbsp; &nbsp; ประกาศรายชื่อ</p>
+                        <p><span>8 ก.พ. - 9 ก.พ. 66</span> &nbsp; &nbsp; ยืนยันสิทธิ์ Clearing House</p>
+                        <p><span>9 ก.พ. - 10 ก.พ. 66</span> &nbsp; &nbsp; สละสิทธิ์ในระบบ ทปอ.</p>
+                        <p><span>11 ก.พ. - 12 ก.พ. 66</span> &nbsp; &nbsp; ประกาศรายชื่อ ผู้มีสิทธิ์เข้าศึกษา</p>
+                        <p><span>16 ก.พ - 20 ก.พ. 66</span> &nbsp; &nbsp; รายงานตัวเข้าศึกษา</p>
+
+
+                    </div>
+                    <div class="tab-pane fade" id="Admission" role="tabpanel" aria-labelledby="Admission-tab">
+                        <p><span>22 พ.ย. - 6 ธ.ค. 65</span> &nbsp; &nbsp; สมัคร เลือกคณะ/สาขา</p>
+                        <p><span>8 ธ.ค. - 9 ธ.ค. 65</span> &nbsp; &nbsp; ประกาศรายชื่อ ผู้ผ่านการคัดเลือก</p>
+                        <p><span>12 ม.ค. - 15 ม.ค. 66</span> &nbsp; &nbsp; สอบสัมภาษณ์</p>
+                        <p><span>17 ม.ค. 66
+                            - 24 ม.ค. 66</span> &nbsp; &nbsp; ประกาศรายชื่อ </p>
+                        <p><span>18 ม.ค. 66
+                            - 20 ม.ค. 66</span> &nbsp; &nbsp; ยืนยันสิทธิ์คัดกรองใน มข</p>
+                        <p><span>7 ก.พ. - 8 ก.พ. 66</span> &nbsp; &nbsp; ประกาศรายชื่อ</p>
+                        <p><span>8 ก.พ. - 9 ก.พ. 66</span> &nbsp; &nbsp; ยืนยันสิทธิ์ Clearing House</p>
+                        <p><span>9 ก.พ. - 10 ก.พ. 66</span> &nbsp; &nbsp; สละสิทธิ์ในระบบ ทปอ.</p>
+                        <p><span>11 ก.พ. - 12 ก.พ. 66</span> &nbsp; &nbsp; ประกาศรายชื่อ ผู้มีสิทธิ์เข้าศึกษา</p>
+                        <p><span>16 ก.พ - 20 ก.พ. 66</span> &nbsp; &nbsp; รายงานตัวเข้าศึกษา</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- ข้อสอบ  -->
+        <h4>คลังข้อสอบ</h4>
+        <div class="exam">
+            <div class="card-deck">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title"><p><i class="fa fa-file" aria-hidden="true"></i> 9 วิชาสามัญ </p></h5>
+                    <p class="card-text">จำนวน 7 วิชา ได้แก่ ภาษาไทย, สังคมศึกษา, อังกฤษ, คณิตศาสตร์ (1), ฟิสิกส์, เคมี
+                        และ ชีววิทยา</p>
+                        
+                  </div>
+                  <a class="wicha" href="/auth/ninecommon" style=" text-decoration:none"> ดูข้อสอบ</a>
+                  
+                </div>
+                <div class="card">
+                  
+                  <div class="card-body">
+                    <h5 class="card-title"><p><i class="fa fa-file" aria-hidden="true"></i>GAT/PAT</p></h5>
+                    <p class="card-text">GAT คือการทดสอบวิชาความถนัดทั่วไป
+                        PAT คือการทดสอบวิชาความถนัดทางวิชาการ
+                        และวิชาชีพ</p>
+                  </div>
+                  <a class="wicha" href="/auth/gatpat" style=" text-decoration:none"> ดูข้อสอบ</a>
+                  
+                </div>
+                <div class="card">
+                  
+                  <div class="card-body">
+                    <h5 class="card-title"><p><i class="fa fa-file" aria-hidden="true"></i>NETSAT</p></h5>
+                    <p class="card-text">เป็นศูนย์ทดสอบความฉลาดในการเรียนรู้ภาค
+                        ตะวันออกเฉียงเหนือ ประเมินความฉลาดและ
+                        ความสามารถในการเรียนรู้ของนักเรียนระดับ
+                        มัธยมศึกษาตอนปลาย</p>
+                  </div>
+                  <a class="wicha" href="/auth/netsat"  style=" text-decoration:none"> ดูข้อสอบ</a>
+                </div>
+              </div>
+
+
+        </div>
+        
+        
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
+        </script>
+
+    <!-- Part Java Script -->
+    <script>
+
+
+
+
+        /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+        var dropdown = document.getElementsByClassName("dropdown-btn");
+        var i;
+
+        for (i = 0; i < dropdown.length; i++) {
+            dropdown[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var dropdownContent = this.nextElementSibling;
+                if (dropdownContent.style.display === "block") {
+                    dropdownContent.style.display = "none";
+                } else {
+                    dropdownContent.style.display = "block";
+                }
+            });
+        }
+
+        // Add active class to the current button (highlight it)
+        var header = document.getElementById("nav");
+        var btns = header.getElementsByClassName("btn");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function () {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
+        }
+    </script>
 </body>
 </html>

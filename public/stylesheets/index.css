@@ -1,0 +1,276 @@
+.content1 {
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    margin-top: -20px;
+}
+
+.search-text {
+    position: relative;
+    left: 48%;
+    bottom: 2rem;
+    width: 49%;
+
+}
+
+.search-text .input-search {
+    height: 45px;
+    width: 400px;
+    padding-left: 20px;
+    color: #333;
+    border-radius: 10px;
+    border: 1px solid #f0617e;
+}
+
+.search-text .btn-search {
+    border-radius: 10px;
+    border: 1px solid #f0617e;
+    background-color: #f0617e;
+    color: #FFF;
+    padding: 10px 20px;
+}
+
+.search-text.btn-search:hover {
+    background-color: #FFF;
+    color: #7dabdb;
+}
+
+.home {
+    position: relative;
+    left: 1%;
+    top: 15px;
+    width: 500px;
+    font-size: 18px;
+    color: #FA2A55;
+
+}
+
+.coc {
+    width: 57%;
+    height: 200px;
+    background-color: white;
+    margin-top: 20px;
+    position: relative;
+    left: 241px;
+    border-radius: 10px;
+
+}
+
+.coc1 {
+    color: #FA2A55;
+    position: absolute;
+    left: 3%;
+    top: 10px;
+    width: 70%;
+
+
+}
+
+.coc1 h5 {
+    font-size: 25px;
+    margin: 0;
+}
+
+.coc1 p {
+    font-size: 14px;
+    color: rgb(87, 87, 87);
+    margin: 0;
+
+
+}
+
+.imgcoc {
+    width: 186px;
+    position: absolute;
+    left: 74%;
+    top: 41px;
+}
+
+.majorchoose {
+    padding: 5px 20px;
+    border: 1px solid #FA2A55;
+    color: white;
+    background-color: #FA2A55;
+    border-radius: 10px;
+    position: relative;
+    left: -23%;
+    top: 159px;
+}
+
+.majorchoose:hover {
+    color: #FA2A55;
+    background-color: white;
+}
+
+.event {
+    width: 25%;
+    height: auto;
+    background-color: white;
+    margin-top: -200px;
+    position: absolute;
+    left: 1127px;
+    border-radius: 10px;
+
+}
+.eventtime{
+    margin: 20px;
+    color: #FA2A55;
+}
+.nav-item{
+    font-size: 11px;
+}
+
+#portfolio-tab{
+    color: #CF5840;
+}
+#portfolio-tab:hover{
+    color: #CF5840;
+    background-color: #FEDBC2;
+}
+#portfolio-tab:hover , #portfolio-tab:focus{
+    background-color: #FEDBC2;
+}
+
+#Quota-tab{
+    color: #FA2A55;
+}
+#Quota-tab:hover , #Quota-tab:focus{
+    background-color: #f9d2d5;
+}
+
+
+#Admission-tab{
+    color: #0B0896;
+   
+}
+#Admission-tab:hover , #Admission-tab:focus{
+    background-color: #d3d2ff;
+}
+.tab-pane{
+    background-color: white;
+    font-size: 14px;
+    margin-top: 15px;
+}
+#portfolio span{
+    border: 1px solid  #FEDBC2;
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: #FEDBC2
+    ;    
+}
+#portfolio{
+    color: #CF5840;   
+}
+
+#Quota span{
+    border: 1px solid  #FEA3AA;
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: #FEA3AA
+    ;    
+}
+#Quota{
+    color: #FA2A55;   
+}
+
+#Admission span{
+    border: 1px solid  #d3d2ff;
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: #d3d2ff
+    ;   
+}
+#Admission{
+    color: #0B0896;   
+}
+
+/* การ์ด */
+
+.exam1 {
+    
+    background-color: white;
+    border-radius: 10px;
+    margin: 20px;
+
+}
+h4{
+   position:absolute;
+   left: 16rem;
+   top: 21rem;
+}
+
+.card-body .fa {
+    border: 1px solid #DBF6F2;
+    padding: 8px 10px;
+    border-radius: 10px;
+    background-color: #7e7cff2b;
+    color: #7F7CFF;
+    margin: 2px;
+}
+.discripstion{
+    font-size: 12px;
+    width: 15%;
+    position: absolute;
+    top: 95px;
+    left: 40px;
+}
+
+.wicha{
+    position: absolute;
+    top: 150px;
+    left: 80px;
+    color: #7F7CFF;
+
+}
+.wicha:hover{
+    color: #2c74e1;
+
+}
+.card{
+    border-radius: 10px;
+    height: 200px;
+    
+   
+}
+.card:hover{
+    transform: translateY(-10px);
+    transition: 0.6s;
+}
+.card-body{
+    font-size: 12px;
+    
+}
+.card-deck{
+    width: 55%;
+   
+    display: flex;
+    margin-top: 88px;
+    position: relative;
+    left: 14px;
+}
+@media screen and (min-width:1080px){
+    .coc {
+        width: 58%;
+        height: 200px;
+        background-color: white;
+        margin-top: 20px;
+        position: relative;
+        left: 311px;
+        border-radius: 10px;
+    }
+    .event {
+        width: 20%;
+        height: auto;
+        background-color: white;
+        margin-top: -200px;
+        position: absolute;
+        left: 1458px;
+        border-radius: 10px;
+    }
+    h4 {
+        position: absolute;
+        left: 20rem;
+        top: 22rem;
+    }
+    
+}

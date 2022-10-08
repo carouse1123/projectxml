@@ -7,8 +7,24 @@ var logger = require('morgan');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var showRouter = require('./routes/show');
+var adminRouter = require('./routes/admin');
+var authRouter = require('./routes/auth');
+var gatpatRouter = require('./routes/gatpat');
+var ninecommonRouter = require('./routes/ninecommon');
+var netsatRouter = require('./routes/netsat');
 
 var app = express();
+
+const session = require('express-session');
+
+app.use(cookieParser());
+app.use(
+  session({
+    secret: 'my_super_secret',
+    resave: false,
+    saveUninitialized: false
+  })
+);
 
 const monk = require('monk')
 
@@ -33,6 +49,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/show', showRouter);
+app.use('/admin', adminRouter);
+app.use('/auth', authRouter);
+app.use('/GATPAT', gatpatRouter);
+app.use('/ninecommon', ninecommonRouter);
+app.use('/NETSAT', netsatRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
